@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="pomodoro.css">
+
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="photos/logo.png" height="120">
+            <ul>
+                <li><a href="eduorganizer.html"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="calendar.html"><i class="fas fa-calendar"></i>Calendar</a></li>
+                <li><a href="message.html"><i class="fas fa-message"></i>Messages</a></li>
+                <li><a href="pomodoro.html"><i class="fas fa-clock"></i>Pomodoro</a></li>
+                <li><a href="resources.html"><i class="fa-solid fa-magnifying-glass"></i>Resources</a></li>
+            </ul> 
+            <div class="logout">
+                <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="header">Pomodoro Timer</div> 
+
+        <div class="container">
+            <h1></h1>
+
+            <div class="painel">
+                <p id="work">study</p>
+                <p id="break">break</p>
+            </div>
+
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes"></p>
+                        <p>:</p>
+                        <p id="seconds"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+
+                <a id="reset" href="pomodoro.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="pomodoro.js"></script>
+</body>
+</html>
